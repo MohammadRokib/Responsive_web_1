@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
         audio {
             padding-left: 20px;
         }
@@ -18,12 +24,71 @@
             width: 50%;
             border: 1px solid;
             border-color: lightgray;
-            border-radius: 5px;
+            border-radius: 15px;
         }
 
         .item {
-            width: 50%;
-            padding-left: 20px;
+            height: 290px;
+            width: 40%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 30px;
+
+            box-shadow: 5px 5px 5px lightgray;
+        }
+        .item iframe {
+            display: block;
+            margin: 5% auto;
+            border-radius: 10px;
+
+            box-shadow: 5px 5px 5px lightgray;
+        }
+
+        .item h3 {
+            text-align: center;
+            text-shadow: 2px 2px 2px lightgray;
+        }
+
+        #playlist {
+            text-align: center;
+        }
+        #playlist a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+
+            margin: 20% auto;
+            border-radius: 10px;
+        }
+        a:hover {
+            background-color: lightgray;
+        }
+        #playlist img {
+            display: block;
+            margin: 5% auto;
+            height: 80%;
+            width: 80%;
+            border-radius: 10px;
+
+            box-shadow: 5px 5px 5px lightgray;
+        }
+        #playlist audio {
+            margin-top: 5%;
+        }
+
+        .item li a {
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-size: 20px;
+
+            margin: 3% auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 10px;
         }
     </style>
 </head>
@@ -41,19 +106,79 @@
         </nav>
     </header>
 
+    <br>
+    <br>
+    <br>
+
     <main>
         <section>
             <div class="item">
-                <h1>first box</h1>
+                <iframe width="90%" height="80%" src="https://www.youtube.com/embed/P5AFbrsFXi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Video-1</h3>
             </div>
             <div class="item">
-
+                <iframe width="90%" height="80%" src="https://www.youtube.com/embed/ifETgFP50ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Video-2</h3>
             </div>
         </section>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3R57qdvEi54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <audio src="media/audio/2011_telephone_ring.mp3" controls>Ringtone</audio>
+
+        <br>
+        <br>
+
+        <section>
+            <div class="item">
+                <iframe width="90%" height="80%" src="https://www.youtube.com/embed/J4_9XabaDr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Video-3</h3>
+            </div>
+            <div class="item" id="playlist">
+                <img src="media/images/playlist_thumbnail.jpg" alt="">
+                <a target="_blank" href="https://www.youtube.com/playlist?list=PLrX8A59t5rIqnaQi51xedgyFTrJsJC-jb">Watch the full playlist about devil</a>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <section>
+            <div class="item">
+                <iframe width="90%" height="80%" src="https://www.youtube.com/embed/A0_zH2ld_PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Video-4</h3>
+            </div>
+            <div class="item">
+                <h3>Consider Subscribing to these channels</h3>
+                <ul>
+                    <li><a target="_blank" href="https://www.youtube.com/c/TuahaIbnJalil">Tuaha Ibn Jalil</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCS-jXhB3up2zgTFNr4ox0JA">Tuaha Ibn Jalil Speaks</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/c/TuahaSpeaks2">Tuaha Ibn Jalil Speaks 2</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/c/youthclubpk">Youth Club</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCcZt5qpHlPz-6w3DMNwzQeA">Youth Club Shorts</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <section style="margin-bottom: 10px;">
+            <div class="item" id="playlist">
+                <img src="media/images/Quran_thumbnail.jpg" alt="">
+                <a target="_blank" href="https://www.youtube.com/playlist?list=PLDPHd_U0ECxG3wMEgA--fdZpG9SJEGAQQ">Easy way of learning Quran course</a>
+            </div>
+            <div class="item" id="playlist">
+                <audio class="first" src="media/audio/2011_telephone_ring.mp3" controls>Ringtone</audio>
+                <h3>Audio-1</h3>
+                <br>
+                <audio src="media/audio/2011_telephone_ring.mp3" controls>Ringtone</audio>
+                <h3>Audio-2</h3>
+            </div>
+        </section>
     </main>
+
+    <br>
+
+    <footer>
+        <p>MohammadRokib 2022 All rights reserved</p>
+    </footer>
     
 </body>
 </html>
