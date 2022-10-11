@@ -1,5 +1,19 @@
+header {
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 5px;
+
+    box-shadow: 5px 5px 5px lightgray;
+}
+nav {
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+}
 nav ul {
     display: flex;
+    position: absolute;
+    right: 20px;
 }
 
 nav li {

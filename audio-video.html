@@ -10,11 +10,27 @@
         audio {
             padding-left: 20px;
         }
+        section {
+            display: flex;
+        }
+
+        section div {
+            width: 50%;
+            border: 1px solid;
+            border-color: lightgray;
+            border-radius: 5px;
+        }
+
+        .item {
+            width: 50%;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
+            <h1>Explore all the options</h1>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="form.html">Form</a></li>
@@ -24,8 +40,20 @@
             </ul>            
         </nav>
     </header>
-    <h1>Exploring HTML5</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3R57qdvEi54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <audio src="media/audio/2011_telephone_ring.mp3" controls>Ringtone</audio>
+
+    <main>
+        <section>
+            <div class="item">
+                <h1>first box</h1>
+            </div>
+            <div class="item">
+
+            </div>
+        </section>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3R57qdvEi54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <audio src="media/audio/2011_telephone_ring.mp3" controls>Ringtone</audio>
+    </main>
+    
 </body>
 </html>
